@@ -1,5 +1,8 @@
-﻿namespace VkrChegodaeva;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace VkrChegodaeva;
+
+[Table("DeviceParameter")]
 public class DeviceParameterEntity
 {
     public int Id { get; set; }

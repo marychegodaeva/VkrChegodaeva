@@ -1,5 +1,8 @@
-﻿namespace VkrChegodaeva;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace VkrChegodaeva;
+
+[Table("FavoriteDevice")]
 public class FavoriteDeviceEntity
 {
     public int Id { get; set; }
