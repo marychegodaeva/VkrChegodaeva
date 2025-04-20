@@ -9,7 +9,7 @@ public class DeviceParameterConfiguration : IEntityTypeConfiguration<DeviceParam
     {
         builder.HasKey(x => x.Id);
 
-        builder.HasOne(x => x.Parameter).WithMany(x => x.DeviceParameters).HasForeignKey(x => x.DeviceId);
+        builder.HasOne(x => x.Parameter).WithMany(x => x.DeviceParameters).HasForeignKey(x => x.ParameterId);
         builder.HasOne(x => x.Device).WithMany(x => x.DeviceParameters).HasForeignKey(x => x.DeviceId);
 
         builder.Property(x => x.ParameterId).IsRequired();
