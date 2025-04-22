@@ -14,5 +14,16 @@ public class UserRepository(VkrDbContext dbContext) : IUserRepository
         return userEntity;
     }
 
+    public async Task<UserEntity?> GetUserByLoginAsync(string login)
+        => await _dbContext.Users.AsNoTracking().FirstOrDefaultAsync(x => x.Login == login);
+
+    public async Task<bool> IsFreeEmailAsync(string email) => !await _dbContext.Users.AnyAsync(x => x.Email == email);
+
+    public async Task AddAsync(UserEntity user)
+    {
+        await _dbContext.Users.AddAsync(user);
+        await _dbContext.SaveChangesAsync();
+    }
+
     private readonly VkrDbContext _dbContext = dbContext;
 }
