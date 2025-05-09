@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VkrChegodaeva.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VkrChegodaeva.Infrastructure", "VkrChegodaeva.Infrastructure\VkrChegodaeva.Infrastructure.csproj", "{876AB3C0-28C6-4ECB-81A1-053F0F25C8AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VkrChegodaeva.Tests", "VkrChegodaeva.Tests\VkrChegodaeva.Tests.csproj", "{77A96C0B-8108-4BF1-AFD9-F9FF10A57B51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{876AB3C0-28C6-4ECB-81A1-053F0F25C8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{876AB3C0-28C6-4ECB-81A1-053F0F25C8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{876AB3C0-28C6-4ECB-81A1-053F0F25C8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A96C0B-8108-4BF1-AFD9-F9FF10A57B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A96C0B-8108-4BF1-AFD9-F9FF10A57B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A96C0B-8108-4BF1-AFD9-F9FF10A57B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A96C0B-8108-4BF1-AFD9-F9FF10A57B51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

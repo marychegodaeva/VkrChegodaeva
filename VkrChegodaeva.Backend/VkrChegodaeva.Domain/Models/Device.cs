@@ -8,6 +8,7 @@ public class Device
     public string ImageName { get; set; }
     public string Price { get; set; }
     public bool IsFavorite { get; set; }
+    public int CategoryId { get; set; }
     public List<DeviceParameter> DeviceParameters { get; set; }
 
     public static Device ConvertToDto(DeviceEntity entity)
@@ -18,6 +19,7 @@ public class Device
             Description = entity.Description,
             ImageName = entity.ImageName,
             Price = entity.Price,
+            CategoryId = entity.CategoryId,
             DeviceParameters = entity.DeviceParameters.Select(DeviceParameter.ConvertToDto).ToList(),
         };
 }

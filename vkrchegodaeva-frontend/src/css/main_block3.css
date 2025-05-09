@@ -1,0 +1,46 @@
+.block-3 {
+  position: absolute;
+  top: 1600px;
+  width: 100%;
+  max-width: 1800px; 
+  height: 930px;
+  background-image: url(../../images/icons/background-block3.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: -1;
+}
+
+.block-3 .light-purple-selection {
+  color: #48547C;
+}
+
+.block-3  h3 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 60px;
+}
+
+.block-3 .info {
+  padding: 60px 46px;
+}
+
+.block-3 .info .partner {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.block-3 .info .partner .partner-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 26px;
+}
+
+.block-3 .info .partner .partner-description {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 46px;
+  max-width: 697px;
+}

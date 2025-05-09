@@ -6,7 +6,7 @@ public class CategoryService(ICategoryRepository categoryRepository) : ICategory
     {
         var entityList = await _categoryRepository.GetListAsync();
 
-        return entityList.Select(Category.ConvertToDto).ToList();
+        return entityList.Select(Category.ConvertToDto).OrderBy(x => x.Id).ToList();
     }
 
     public async Task<Category?> GetDevicesByCategoryIdAsync(int categoryId, int userId)

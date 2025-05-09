@@ -1,0 +1,160 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 400;
+  background-color: #48547C;
+  color: #33343B;
+  margin: 54px auto;
+}
+
+main, .root {
+  max-width: 1920px;
+  width: 100%;
+  position: relative;
+}
+
+.block1, .block2, .block3, .block4 {
+  position: relative;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; 
+  font-size: inherit; 
+  font-weight: inherit; 
+  line-height: inherit;
+  font-family: inherit; 
+  color: inherit; 
+  text-align: inherit; 
+  text-decoration: none; 
+  text-transform: none; 
+  letter-spacing: normal; 
+  display: block; 
+}
+
+input {
+  outline: none;
+}
+
+::selection { 
+  background-color: #48547C;
+  color: #EBF7FF;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+button {
+  background: none;
+  font-family: Montserrat;
+}
+
+.light-purple-selection {
+  color: #8B9DD8;
+  font-weight: 700;
+}
+
+nav .lk {
+  cursor: pointer;
+}
+
+nav a.lk svg {
+  margin-top: 10px;
+}
+
+nav .lk:hover #background-lk {
+  fill: #8B9DD8;
+}
+
+
+nav {
+  position: absolute;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 535px;
+  max-height: 60px;
+  border-radius: 50px;
+  background-color: #48547C;
+  padding: 10px 29px;
+  z-index: 1;
+}
+
+nav .section {
+  display: flex;
+  gap: 30px;
+}
+
+nav .section .item {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #EBF7FF;
+  cursor: pointer;
+}
+
+nav .section .item:hover, .button-detail:hover .text {
+  color: #8B9DD8;
+}
+
+.button-detail:hover .background-arrow {
+  fill: #8B9DD8;
+}
+
+.button-detail {
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-detail .info {
+  max-width: 296.25px;
+  height: 79px;
+  border-radius: 65.83px;
+  background-color: #48547C;
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  padding: 5px 32px; 
+}
+
+.button-detail .text {
+  color: #EBF7FF; 
+  font-size: 26.33px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.navigation {
+  display: flex;
+  max-width: 378px;
+  margin: 0;
+}
+
+.button-detail .arrow {
+  margin: 0;
+}
+
+img, image {
+  pointer-events: none;
+}

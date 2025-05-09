@@ -52,6 +52,11 @@ public class ProfileController(IUserService userService, IDeviceService deviceSe
             return Unauthorized();
         }
 
+        if (ids.Equals("0"))
+        {
+            return BadRequest();
+        }
+
         var idList = ids.Split(',').Select(int.Parse).ToList();
 
         var devices = await _deviceService.GetDevicesByIdsAsync(userId, idList);

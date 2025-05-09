@@ -44,6 +44,8 @@ public class UserService(IUserRepository userRepository, IPasswordHasher passwor
         return token;
     }
 
+    public bool CheckToken(string token) => _jwtProvider.CheckToken(token);
+
     private readonly IUserRepository _userRepository = userRepository;
     private readonly IPasswordHasher _passwordHasher = passwordHasher;
     private readonly IJwtProvider _jwtProvider = jwtProvider;

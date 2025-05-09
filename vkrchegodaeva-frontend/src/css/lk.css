@@ -1,0 +1,221 @@
+main.lk {
+  max-width: 1920px;
+  background-color: #cfe7f8;
+  border-radius: 50px;
+  padding: 25px 36px;
+  min-height: 920px;
+}
+
+nav.nav-lk {
+  position: static;
+  background-color: #48547C;
+  margin-right: 30px;
+}
+
+nav.nav-lk {
+  cursor: pointer;
+}
+
+.button-detail .text.button-lk, .lk #background-lk, .button-detail .text .out.button-lk:hover {
+  fill: #8B9DD8;
+}
+
+.lk #icon-lk {
+  fill: #48547C;
+}
+
+nav.nav-lk .lk:hover #background-lk {
+  fill: #EBF7FF;
+}
+
+.button-detail .info.out.button-lk {
+  background-color: #8B9DD8;
+  max-width: 110px;
+}
+
+.button-detail .info.out.button-lk.logout {
+  margin-bottom: -20px;
+  max-height: 70px;
+}
+
+.button-detail.button-lk, .button-detail .info.out.button-lk {
+  max-height: 62px;
+  /* margin-bottom: -10px; */
+}
+
+.button-detail .text.button-lk {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  width: 70px;
+} 
+
+.button-detail .text.out.button-lk {
+  color: #48547C;
+}
+
+.button-detail.out.button-lk:hover .button-detail .text.out.button-lk {
+  color: #EBF7FF;
+}
+
+.nav-login {
+  position: relative;
+}
+
+main h1.h1-lk {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+
+.profile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.login {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-top: 10px;
+}
+
+.profile-photo {
+  width: 168px;
+}
+
+.favourites-cards {
+  display: flex;
+  gap: 70px;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.favourites-cards.compare {
+  gap: 52px;
+}
+
+.card {
+  background-image: url(../images/icons/card.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 333px;
+  max-height: 820px;
+  padding: 36px;
+  padding-top: 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: center;
+  margin: 0;
+  height: 646px;
+}
+
+.card.compare {
+  background-image: url(../images/icons/card-compare.svg);
+  max-height: 1085px;
+  height: 892px;
+  padding: 120px 44px 36px;
+}
+
+.button-container.button-lk {
+  position: absolute;
+  top: 25px;
+  right: 38px;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  background: none;
+}
+
+.button-container .icon-button.button-lk {
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 37.5px;
+  height: 150px;
+  max-width: 333px;
+}
+
+.photo-card {
+  width: 315px;
+  height: 315px;
+  border-radius: 34px;
+}
+
+.photo-card.compare {
+  height: 200px;
+  width: 330px;
+}
+
+.photo-card, .photo-card.compare {
+  object-fit: contain;
+  background-color: white;
+}
+
+.button-detail.more.button-lk {
+  max-height: 86px;
+}
+
+.button-detail.more .text.button-lk {
+  width: 160px;
+  font-size: 26.33px;
+  line-height: 32px;
+}
+
+.button-detail.more .info.button-lk {
+  padding: 13px 36px;
+}
+
+.button-detail.more .arrow.button-lk {
+  /* width: 44px; */
+  height: 44px;
+}
+
+.characteristics {
+  max-height: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+ul li {
+  max-width: 330px;
+  margin: 0;
+  margin-top: -22px;
+}
+
+.price {
+  width: 330px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+  margin: 0;
+}
+
+.characteristics .parameter {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.characteristics .characteristic {
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 0;
+}

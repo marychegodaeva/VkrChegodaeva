@@ -1,0 +1,51 @@
+.block1 {
+  position: relative;
+  max-width: 1800px;
+  max-height: 1080px;
+  margin-bottom: 60px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  top: 25px;
+  left: 88px;
+}
+
+nav.nav-main {
+  position: absolute;
+  background-color: #48547C;
+}
+
+nav.nav-main .lk:hover #background-lk-main {
+  fill: #8B9DD8;
+}
+
+.background-lk-main {
+  fill: #ebf7ff;
+}
+
+.content {
+  position: relative;
+  color: #ebf7ff;
+  height: 920px;
+}
+
+.content h1 {
+  font-size: 60.69px;
+  font-weight: 700;
+  line-height: 60px;
+  position: absolute;
+  max-width: 1146px;
+  top: 700px;
+  left: 550px;
+  text-align: right;
+  padding: 36px 32px;
+  background-color: rgb(72, 84, 124, 0.86);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+}

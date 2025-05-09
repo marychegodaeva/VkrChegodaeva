@@ -1,0 +1,70 @@
+body {
+  margin-bottom: 0;
+}
+
+.block4 {
+  background-color: #33343b;
+  color: #EBF7FF;
+  border-radius: 50px 50px 0px 0px;
+  padding: 56px 106px;
+  max-width: 1920px;
+  position: relative;
+}
+
+.block4 h2 {
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.block4 p {
+  max-width: 1754px;
+  margin-bottom: 34px;
+  font-size: 37px;
+}
+
+.block4 p .light-purple-selection {
+  font-weight: 600;
+}
+
+.map-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.company-map {
+  max-width: 1214px;
+}
+
+.contact-info {
+  margin: 0;
+}
+
+.contact-info p {
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.contact-info p.last {
+  margin: 0;
+}
+
+.contact-info p .light-purple-selection {
+  font-size: 40px;
+}
+
+.contact-info p .light-purple-selection:hover, .contact-info p a {
+  color: #EBF7FF;
+}
+
+p.footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 0;
+}

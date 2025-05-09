@@ -52,6 +52,29 @@ public class AuthController(IUserService userService, ILogger<AuthController> lo
         return Ok();
     }
 
+    [HttpGet("checkToken")]
+    public IActionResult CheackToken()
+    {
+        _logger.LogInformation("Получен запрос на проверку токена");
+
+        var jwtToken = Request.Cookies["some-cookies"];
+
+        if (jwtToken is not null && _userService.CheckToken(jwtToken))
+            return Ok(jwtToken);
+
+        return Unauthorized();
+    }
+
+    [HttpGet("logout")]
+    public IActionResult Logout()
+    {
+        _logger.LogInformation("Получен запрос на выход из аккаунта");
+
+        Response.Cookies.Delete("some-cookies");
+
+        return Ok();
+    }
+
     private readonly IUserService _userService = userService;
     private readonly ILogger<AuthController> _logger = logger;
 }

@@ -6,4 +6,5 @@ public interface IUserService
     Task<bool> IsFreeEmailAsync(string email);
     Task RegisterAsync(UserRequest user);
     Task<string> LoginAsync(UserRequest user);
+    bool CheckToken(string token);
 }
