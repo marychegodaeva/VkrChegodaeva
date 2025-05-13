@@ -6,7 +6,6 @@ import { Category } from "./components/Category";
 import { Lk } from "./components/Lk";
 
 function App() {
-
   return (
     <>
       <Router>

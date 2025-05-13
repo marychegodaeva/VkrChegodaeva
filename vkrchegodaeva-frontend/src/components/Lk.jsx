@@ -63,7 +63,6 @@ export function Lk () {
         const response = await axios.get(`${config.API_BASE_URL}/api/Profile/getUserInfo`, { withCredentials: true });
         setData(response.data)
         setAuthenticated(true)
-        console.log(response.data)
       } catch (error) {
         console.log(error)
         setAuthenticated(false)
@@ -72,7 +71,6 @@ export function Lk () {
       try {
         const idsString = devicesToCompareIds !== null && devicesToCompareIds.length > 0 ? devicesToCompareIds.join(',') : "0";
         const response = await axios.get(`${config.API_BASE_URL}/api/Profile/getComparisonDevices/${idsString}`, {withCredentials: true});
-        console.log("Compare", response.data);
         setComparisonList(response.data)
       } catch (error) {
         console.log(error);
@@ -86,7 +84,6 @@ export function Lk () {
   const logoutButtonHandler = async () => {
     try {
         const response = await axios.get(`${config.API_BASE_URL}/api/Auth/logout`, { withCredentials: true });
-        console.log(response.data)
     } catch (error) {
         console.log(error)
     }
@@ -135,7 +132,6 @@ export function Lk () {
       };
 
       setData(updatedData);
-      console.log("Updated Data:", updatedData);
     } catch (error) {
       console.log(error);
       setModalActiveFavorites(true)
@@ -148,9 +144,10 @@ export function Lk () {
       return;
     }
 
-    if (comparisonList.length > 0 && data && data.favoriteDevices) {
-      const firstDeviceCategory = data.favoriteDevices.find(d => d.id === comparisonList[0].id).categoryId;
+    console.log("Device", device)
 
+    if (!devicesToCompareIds.includes(device.id) && comparisonList.length > 0 && data && data.favoriteDevices) {
+      const firstDeviceCategory = data.favoriteDevices.find(d => d.id === comparisonList[0].id).categoryId;
       if (device.categoryId !== firstDeviceCategory) {
         setModalActiveCompareCategory(true);
         return;

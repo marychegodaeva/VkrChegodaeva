@@ -31,7 +31,7 @@ public class UserService(IUserRepository userRepository, IPasswordHasher passwor
     {
         var userEntity = await _userRepository.GetUserByLoginAsync(user.Login);
 
-        if (user == null)
+        if (userEntity == null)
             throw new Exception("User not found");
 
         var result = _passwordHasher.Verify(user.Password, userEntity.PasswordHash);

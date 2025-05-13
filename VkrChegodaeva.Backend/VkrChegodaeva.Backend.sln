@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VkrChegodaeva.Infrastructure", "VkrChegodaeva.Infrastructure\VkrChegodaeva.Infrastructure.csproj", "{876AB3C0-28C6-4ECB-81A1-053F0F25C8AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VkrChegodaeva.Tests", "VkrChegodaeva.Tests\VkrChegodaeva.Tests.csproj", "{77A96C0B-8108-4BF1-AFD9-F9FF10A57B51}"
+	ProjectSection(ProjectDependencies) = postProject
+		{876AB3C0-28C6-4ECB-81A1-053F0F25C8AE} = {876AB3C0-28C6-4ECB-81A1-053F0F25C8AE}
+		{ED1649BD-1CAE-4903-8398-B9F22FEC857B} = {ED1649BD-1CAE-4903-8398-B9F22FEC857B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -20,15 +20,10 @@ export function Category () {
   const [modalActiveCompareAuth, setModalActiveCompareAuth] = useState(false)
   const [modalActiveCompareCategory, setModalActiveCompareCategory] = useState(false)
   const [isAuthenticated, setAuthenticated] = useState(false)
-  // const [devicesToCompareIds, setDevicesToCompareIds] = useState([])
 
   const [devicesToCompareIds, setDevicesToCompareIds] = useState(() => {
-    // Инициализация состояния из localStorage при первом рендере
     const savedDevices = localStorage.getItem('devicesToCompare');
     return savedDevices ? JSON.parse(savedDevices) : [];
-    
-    // const savedDevices = JSON.parse(localStorage.getItem('devicesToCompare'));
-    // return savedDevices ? savedDevices : [];
   });
 
   useEffect(() => {
@@ -137,36 +132,6 @@ export function Category () {
         setDevicesToCompareIds(JSON.parse(savedDevices));
     }
   }, []);
-    // if (!devicesToCompareIds.includes(deviceId)) {
-    //   if (devicesToCompareIds.length < 4) {
-        
-    //     setDevicesToCompareIds(prevIds => {
-
-    //       const updatedIds = [...prevIds, deviceId];
-    //       localStorage.setItem('devicesToCompare', JSON.stringify(updatedIds));
-    //       return updatedIds;
-    //     });
-    //     setDevicesToCompareIds([...devicesToCompareIds, deviceId])
-    //   }
-    //   else {
-    //     setModalActiveCompare(true)
-    //   }
-    // }
-    // else {
-    //   setDevicesToCompareIds(prevIds => {
-    //     const updatedIds = prevIds.filter(item => item !== deviceId);
-    //     // Сохранение обновленного состояния в localStorage
-    //     localStorage.setItem('devicesToCompare', JSON.stringify(updatedIds));
-    //     return updatedIds;
-    //   });
-    //   // setDevicesToCompareIds(devicesToCompareIds.filter(item => item !== deviceId))
-    // }
-  // };
-
-  // useEffect(() => {
-  //   localStorage.setItem('devicesToCompare', JSON.stringify(devicesToCompareIds));
-  //   console.log("UpdStorage", JSON.stringify(devicesToCompareIds))
-  // }, [devicesToCompareIds]);
 
   return (
     <>

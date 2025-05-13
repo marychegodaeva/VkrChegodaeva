@@ -6,7 +6,7 @@ public class Category
     public string Name { get; set; }
     public string Description { get; set; }
     public string ImageName { get; set; }
-    public List<Device> Devices { get; set; }
+    public List<Device> Devices { get; set; } = [];
 
     public static Category ConvertToDto(CategoryEntity entity)
         => new Category
@@ -15,6 +15,6 @@ public class Category
             Name = entity.Name,
             Description = entity.Description,
             ImageName = entity.ImageName,
-            Devices = entity.Devices.Select(Device.ConvertToDto).ToList()
+            Devices = entity.Devices != null ? entity.Devices.Select(Device.ConvertToDto).ToList() : [],
         };
 }
